@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Kapper | Barbershop</title>
+  <!-- Meta Description -->
+<meta name="description" content="Star Kapper – professionele barbershop in Assen. Strakke herenkapsels, baardverzorging en fades. Boek eenvoudig via WhatsApp of bel direct." />
+
+<!-- Open Graph (WhatsApp / Facebook) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Star Kapper" />
+<meta property="og:title" content="Star Kapper | Barbershop in Assen" />
+<meta property="og:description" content="Professionele herenkapsels, baardverzorging en strakke fades in Assen. Boek direct via WhatsApp." />
+<meta property="og:url" content="https://starkapper.nl" />
+<meta property="og:image" content="https://starkapper.nl/assets/img/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/favicon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts (Lux look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header / Navbar (Topbar removed) -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#home " aria-label="Star Kapper Home">
+        <img class="brand__logo" src="assets/img/logo.png" alt="Star Kapper Logo" />
+        <div class="brand__text">
+          <span class="brand__name">Star Kapper</span>
+          <!-- <span class="brand__tag" data-i18n="brand.tag">Barbershop • Assen</span> -->
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="#home" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="#about" data-i18n="nav.about">Over ons</a>
+        <a class="nav__link" href="#services" data-i18n="nav.services">Diensten</a>
+        <a class="nav__link" href="#gallery" data-i18n="nav.gallery">Galerij</a>
+        <a class="nav__link" href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a class="nav__link" href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Navbar Actions (Language + Quick buttons) -->
+      <div class="navActions">
+        <a class="navIcon" href="tel:+31685254263" aria-label="Phone">
+          <i class="fa-solid fa-phone"></i>
+          <span data-i18n="meta.call">Bel</span>
+        </a>
+
+        <a class="navIcon" target="_blank" rel="noopener" href="https://wa.me/31685254263" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="meta.whatsapp">WhatsApp</span>
+        </a>
+
+        <!-- Language Switcher inside Navbar -->
+        <div class="lang">
+          <button class="lang__btn" id="langBtn" type="button" aria-label="Language switch">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langLabel">NL</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang__menu" id="langMenu" role="menu" aria-hidden="true">
+            <button type="button" class="lang__item" data-lang="nl" role="menuitem">NL <span data-i18n="lang.nl">Nederlands</span></button>
+            <button type="button" class="lang__item" data-lang="en" role="menuitem">EN <span data-i18n="lang.en">English</span></button>
+            <button type="button" class="lang__item" data-lang="ar" role="menuitem">AR <span data-i18n="lang.ar">العربية</span></button>
+          </div>
+        </div>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">Over ons</a>
+      <a href="#services" data-i18n="nav.services">Diensten</a>
+      <a href="#gallery" data-i18n="nav.gallery">Galerij</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+      <div class="mobile__cta">
+        <a class="btn btn--gold" href="#contact" data-i18n="cta.bookNow">Boek nu</a>
+        <a class="btn btn--ghost" href="tel:+31685254263" data-i18n="cta.callNow">Bel direct</a>
+        <a class="btn btn--whatsapp" target="_blank" rel="noopener" href="https://wa.me/31685254263" data-i18n="cta.whatsapp">WhatsApp</a>
+      </div>
+
+      <div class="mobile__lang">
+        <div class="mobileLangTitle" data-i18n="lang.title">Taal</div>
+        <div class="mobileLangBtns">
+          <button type="button" class="btn btn--ghost langQuick" data-lang="nl">NL</button>
+          <button type="button" class="btn btn--ghost langQuick" data-lang="en">EN</button>
+          <button type="button" class="btn btn--ghost langQuick" data-lang="ar">AR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <h1 class="hero__title">
+          <span class="hero__titleTop">Star Kapper</span>
+          <span class="hero__titleSub" data-i18n="hero.title">Modern. Clean. Premium.</span>
+        </h1>
+
+        <p class="hero__text" data-i18n="hero.text">
+          Een luxe barbershop ervaring: strakke fades, perfecte baard, en een relaxte sfeer.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--gold" href="#contact">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span data-i18n="cta.bookNow">Boek nu</span>
+          </a>
+          <a class="btn btn--ghost" href="tel:+31685254263">
+            <i class="fa-solid fa-phone"></i>
+            <span data-i18n="cta.callNow">Bel direct</span>
+          </a>
+          <a class="btn btn--whatsapp" target="_blank" rel="noopener" href="https://wa.me/31685254263">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="cta.whatsapp">WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero__badges">
+          <div class="pill"><i class="fa-solid fa-spray-can-sparkles"></i> <span data-i18n="hero.pill1">Hygiëne & schoon</span></div>
+          <div class="pill"><i class="fa-solid fa-scissors"></i> <span data-i18n="hero.pill2">Professionele cuts</span></div>
+          <div class="pill"><i class="fa-solid fa-crown"></i> <span data-i18n="hero.pill3">Premium uitstraling</span></div>
+        </div>
+      </div>
+
+      <div class="hero__card reveal">
+        <div class="hero__cardTop">
+          <div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>5.0</span>
+            </div>
+            <p class="muted" data-i18n="hero.cardText">Top service, strak resultaat, relaxte sfeer.</p>
+          </div>
+        </div>
+
+        <div class="hero__miniGallery">
+          <img src="assets/img/shop-inside-1.webp" alt="Star Kapper inside" />
+          <img src="assets/img/shop-inside-2.webp" alt="Star Kapper chairs" />
+          <img src="assets/img/shop-front.webp" alt="Star Kapper front" />
+        </div>
+
+        <div class="hero__cardBottom">
+          <div class="infoLine">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-i18n="meta.addressLine">Adres: Zaagmolen, 9401 BR , Assen</span>
+          </div>
+          <div class="infoLine">
+            <i class="fa-solid fa-clock"></i>
+            <span data-i18n="meta.opening">Openingstijden: Ma–Za 10:00–18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scrollHint" href="#about" aria-label="Scroll down">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--dark" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="about.title">Over ons</h2>
+        <p class="section__subtitle" data-i18n="about.subtitle">
+          Star Kapper is gebouwd op kwaliteit, hygiëne en een premium vibe — precies zoals je in de foto’s ziet.
+        </p>
+      </div>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p data-i18n="about.p1">
+            Bij Star Kapper draait alles om detail: strakke lijnen, nette afwerking en een resultaat dat lang goed blijft.
+          </p>
+          <p data-i18n="about.p2">
+            We werken schoon, professioneel en met hoogwaardige producten. De sfeer is rustig en stijlvol — zwart, goud en warm licht.
+          </p>
+
+          <div class="about__features">
+            <div class="feature">
+              <i class="fa-solid fa-shield-heart"></i>
+              <div>
+                <strong data-i18n="about.f1t">Hygiëne eerst</strong>
+                <span data-i18n="about.f1d">Schone werkplek & materialen.</span>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong data-i18n="about.f2t">Ervaring & vakmanschap</strong>
+                <span data-i18n="about.f2d">Moderne technieken & advies.</span>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-mug-hot"></i>
+              <div>
+                <strong data-i18n="about.f3t">Relaxte sfeer</strong>
+                <span data-i18n="about.f3d">Comfortabele stoelen & lighting.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__cta">
+            <a class="btn btn--gold" href="#services">
+              <i class="fa-solid fa-scissors"></i>
+              <span data-i18n="about.cta">Bekijk diensten</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about__media reveal">
+          <div class="mediaGrid">
+            <img src="assets/img/shop-inside-3.webp" alt="Inside Star Kapper" />
+            <img src="assets/img/shop-inside-4.webp" alt="Chairs & Mirrors" />
+            <img src="assets/img/shop-inside-5.webp" alt="Lighting" />
+            <img src="assets/img/shop-front-2.webp" alt="Front Star Kapper" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="services.title">Diensten & Prijzen</h2>
+        <p class="section__subtitle" data-i18n="services.subtitle">
+          Kies je service en boek meteen.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <img src="assets/img/service-haircut.webp" alt="Haircut" />
+          <div class="card__body">
+            <h3 data-i18n="services.s1t">Knippen heren</h3>
+            <p class="muted" data-i18n="services.s1d">Strakke fade of klassieke snit.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s1p">€ 20</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-beard.webp" alt="Beard Trim" />
+          <div class="card__body">
+            <h3 data-i18n="services.s2t">Beard Trim</h3>
+            <p class="muted" data-i18n="services.s2d">Lijnen, shape en verzorging.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s2p">€ 15</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-hairbeard.webp" alt="Hair & Beard" />
+          <div class="card__body">
+            <h3 data-i18n="services.s3t">Hair & Beard</h3>
+            <p class="muted" data-i18n="services.s3d">Complete look: haar + baard.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s3p">€ 30</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-4.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s4t">Styling</h3>
+            <p class="muted" data-i18n="services.s4d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s4p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-5.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s5t">Styling</h3>
+            <p class="muted" data-i18n="services.s5d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s5p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-6.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s6t">Scheren</h3>
+            <p class="muted" data-i18n="services.s6d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s6p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-7.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s7t">Styling</h3>
+            <p class="muted" data-i18n="services.s7d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s7p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-8.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s8t">Styling</h3>
+            <p class="muted" data-i18n="services.s8d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s8p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-9.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s9t">Styling</h3>
+            <p class="muted" data-i18n="services.s9d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s9p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img src="assets/img/service-10.webp" alt="Styling" />
+          <div class="card__body">
+            <h3 data-i18n="services.s10t">Styling</h3>
+            <p class="muted" data-i18n="services.s10d">Föhnen + product, clean finish.</p>
+            <div class="card__bottom">
+              <span class="price" data-i18n="services.s10p">€ 10</span>
+              <a class="btn btn--mini btn--gold" href="#contact" data-i18n="services.book">Boek</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="notice reveal">
+        <i class="fa-solid fa-circle-info"></i>
+        <p data-i18n="services.notice">
+        Let op voor dames: Voor haarverzorging of knipwensen vragen wij om vooraf een duidelijke beschrijving of voorbeeldfoto te sturen via WhatsApp, zodat wij het gewenste resultaat goed kunnen begrijpen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--dark" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="gallery.title">Galerij</h2>
+        <p class="section__subtitle" data-i18n="gallery.subtitle">
+        </p>
+      </div>
+
+      <div class="gallery reveal" aria-label="Gallery grid">
+        <a class="gallery__item" href="assets/img/shop-front-2.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-front-2.webp" alt="Front 2">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-2.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-2.webp" alt="Inside 2">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-3.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-3.webp" alt="Inside 3">
+        </a>
+        <a class="gallery__item" href="assets/img/work-1.webp" target="_blank" rel="noopener">
+          <img src="assets/img/work-1.webp" alt="Work 1">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-4.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-4.webp" alt="Inside 4">
+        </a>
+        <a class="gallery__item" href="assets/img/work-2.webp" target="_blank" rel="noopener">
+          <img src="assets/img/work-2.webp" alt="Work 2">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-5.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-5.webp" alt="Inside 5">
+        </a>
+        <a class="gallery__item" href="assets/img/work-3.webp" target="_blank" rel="noopener">
+          <img src="assets/img/work-3.webp" alt="Work 3">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-front.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-front.webp" alt="Front 1">
+        </a>
+        <a class="gallery__item" href="assets/img/work-4.webp" target="_blank" rel="noopener">
+          <img src="assets/img/work-4.webp" alt="Work 4">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-1.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-1.webp" alt="Inside 1">
+        </a>
+        <a class="gallery__item" href="assets/img/shop-inside-44.webp" target="_blank" rel="noopener">
+          <img src="assets/img/shop-inside-44.webp" alt="Inside 4">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="reviews.title">Reviews</h2>
+        <p class="section__subtitle" data-i18n="reviews.subtitle">
+          Klanten komen terug voor kwaliteit, netheid en resultaat.
+        </p>
+      </div>
+
+      <div class="reviews">
+        <div class="reviews__summary reveal">
+          <div class="ratingBig">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="score">
+              <span class="score__num">5.0</span>
+              <span class="score__out" data-i18n="reviews.outOf">/5</span>
+            </div>
+          </div>
+          <p class="muted" data-i18n="reviews.note">Gebaseerd op klantbeoordelingen.</p>
+        </div>
+
+        <div class="reviews__list">
+          <article class="reviewCard reveal">
+            <div class="reviewCard__top">
+              <strong>Y.</strong>
+              <span class="miniStars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p data-i18n="reviews.r1">“Super netjes en professioneel. Fade is perfect.”</p>
+          </article>
+
+          <article class="reviewCard reveal">
+            <div class="reviewCard__top">
+              <strong>M.</strong>
+              <span class="miniStars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p data-i18n="reviews.r2">“Goede sfeer, schone zaak, en top service.”</p>
+          </article>
+
+          <article class="reviewCard reveal">
+            <div class="reviewCard__top">
+              <strong>A.</strong>
+              <span class="miniStars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p data-i18n="reviews.r3">“Baard trim is strak, precies zoals ik wil.”</p>
+          </article>
+        </div>
+
+        <div class="reviews__cta reveal">
+          <a class="btn btn--gold" href="https://maps.app.goo.gl/Tfk4nCJwZD5uVADx7">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span data-i18n="reviews.cta">Laat een review achter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / ROUTE -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="contact.title">Contact & Route</h2>
+        <p class="section__subtitle" data-i18n="contact.subtitle">
+          Boek snel via WhatsApp of bel direct. Route vind je hieronder op de kaart.
+        </p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__info reveal">
+          <div class="contactBox">
+            <div class="contactLine">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong data-i18n="contact.addressT">Adres</strong>
+                <p class="muted" data-i18n="contact.addressV">Zaagmolen, 9401 BR ,Assen</p>
+              </div>
+            </div>
+
+            <div class="contactLine">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong data-i18n="contact.phoneT">Telefoon</strong>
+                <p class="muted"><a href="tel:+31685254263">+31 6 85254263</a></p>
+              </div>
+            </div>
+
+            <div class="contactLine">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <strong data-i18n="contact.waT">WhatsApp</strong>
+                <p class="muted"><a target="_blank" rel="noopener" href="https://wa.me/31685254263" data-i18n="contact.waLink">Chat via WhatsApp</a></p>
+              </div>
+            </div>
+
+            <div class="contactBtns">
+              <a class="btn btn--gold" href="tel:+31685254263">
+                <i class="fa-solid fa-phone"></i>
+                <span data-i18n="cta.callNow">Bel direct</span>
+              </a>
+              <a class="btn btn--whatsapp" target="_blank" rel="noopener" href="https://wa.me/31685254263">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="cta.whatsapp">WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <!-- Quick Form -->
+          <form class="form" id="quickForm">
+            <h3 data-i18n="contact.formTitle">Snel boeken / bericht</h3>
+
+            <div class="form__row">
+              <label for="name" data-i18n="form.nameLabel">Naam</label>
+              <input id="name" name="name" type="text" data-i18n-placeholder="form.namePh" placeholder="Naam" required />
+            </div>
+
+            <div class="form__row">
+              <label for="service" data-i18n="form.serviceLabel">Dienst</label>
+              <select id="service" name="service" required>
+                <option value="Knippen heren" data-i18n="services.s1t">Knippen heren</option>
+                <option value="Scheren heren" data-i18n="services.s2t">Scheren heren</option>
+                <option value="Haar en baard" data-i18n="services.s3t">Haar en baard</option>
+                <option value="Kinderen" data-i18n="services.s4t">Kinderen</option>
+                <option value="Tondeuze knippen" data-i18n="services.s5t">Tondeuze knippen</option>
+                <option value="Dames knippen" data-i18n="services.s6t">Dames knippen</option>
+                <option value="Wassen, knippen & föhnen" data-i18n="services.s7t">Wassen, knippen & föhnen</option>
+                <option value="Haar verven" data-i18n="services.s8t">Haar verven</option>
+                <option value="Gezichtsharsen" data-i18n="services.s9t">Gezichtsharsen</option>
+                <option value="Gezichtsmassage" data-i18n="services.s10t">Gezichtsmassage</option>
+
+              </select>
+            </div>
+
+            <div class="form__row">
+              <label for="msg" data-i18n="form.messageLabel">Bericht</label>
+              <textarea id="msg" name="msg" rows="4" data-i18n-placeholder="form.messagePh" placeholder="Bericht..." required></textarea>
+            </div>
+
+            <button class="btn btn--gold" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="form.send">Verstuur</span>
+            </button>
+
+            <p class="muted small" data-i18n="form.note">
+              *Na verzenden openen we WhatsApp met een kant-en-klare tekst (geen server nodig).
+            </p>
+          </form>
+        </div>
+
+        <div class="contact__map reveal">
+          <div class="mapBox">
+            <!-- Working Embed (no API key) -->
+            <iframe
+              title="Star Kapper Map"
+              src="https://www.google.com/maps?q=Star+Kapper+Assen&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="mapNote">
+            <i class="fa-solid fa-circle-info"></i>
+            <span data-i18n="contact.mapNote">Werkt de kaart niet? Open de route in Google Maps.</span>
+            <a class="mapLink" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Star+Kapper+Assen" data-i18n="contact.openMap">
+              Open kaart
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">
+          <img class="footer__logo" src="assets/img/logo.png" alt="Star Kapper Logo" />
+
+          
+          <div>
+            <strong>Star Kapper</strong>
+            <div class="muted small" data-i18n="footer.tag">Barbershop • Assen</div>
+          </div>
+        </div>
+        <p class="muted small">
+          © <span id="year"></span> Star Kapper. <span data-i18n="footer.rights">Alle rechten voorbehouden.</span>
+        </p>
+      </div>
+
+<div class="footer__social" aria-label="Social media">
+  <a href="https://www.facebook.com/profile.php?id=61587017133735" target="_blank" rel="noopener" class="footerIcon facebook" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/starkapper/" target="_blank" rel="noopener" class="footerIcon instagram" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+
+      <div class="footer__right">
+        <a class="footer__link" href="#home" data-i18n="nav.home">Home</a>
+        <a class="footer__link" href="#services" data-i18n="nav.services">Diensten</a>
+        <a class="footer__link" href="#gallery" data-i18n="nav.gallery">Galerij</a>
+        <a class="footer__link" href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a class="to home" href="#home" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
