@@ -1,93 +1,75 @@
-🌐 Professional Business Website
+# 🌐 Professional Business Website
 
-A modern, responsive business website designed to present services, packages, projects, and contact options in a clean and professional way.
+A modern, responsive business website designed to present services, packages, projects, and contact options in a clean and professional way.  
 This website is built to create trust, clearly explain services, and convert visitors into clients.
 
-🚀 Project Overview
+---
+
+## 🚀 Project Overview
 
 This project represents a small digital company / freelance business website that offers multiple services such as web development, design, and digital solutions.
 
 The website focuses on:
+- Clear service explanations
+- Professional package presentation
+- Strong visual structure
+- Easy contact via WhatsApp or Email
+- Clean and scalable front-end code
 
-Clear service explanations
+---
 
-Professional package presentation
+## 🧩 Pages & Sections
 
-Strong visual structure
+- **Home (One Page)**
+  - Hero section
+  - Service overview
+  - Packages preview
+  - Call to action
 
-Easy contact via WhatsApp or Email
+- **Services**
+  - Detailed explanation per service
+  - Packages displayed at the end of each section
 
-Clean and scalable front-end code
+- **Projects**
+  - Visual project cards
+  - Clean layout with large images
+  - Professional presentation of work
 
-🧩 Pages & Sections
+- **About Us**
+  - Business introduction
+  - Vision and values
+  - Trust-building content
 
-Home (One Page)
+- **Contact**
+  - Smart contact form
+  - Toggle between WhatsApp and Email
+  - Social media links
 
-Hero section
+---
 
-Service overview
+## 🎨 Design & UI/UX
 
-Packages preview
+- Fully responsive (mobile, tablet, desktop)
+- Card-based layout
+- Smooth hover and transition effects
+- Clean typography and spacing
+- User-focused navigation
 
-Call to action
+---
 
-Services
+## 🛠️ Technologies Used
 
-Detailed explanation per service
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS / Bootstrap
+- Responsive design principles
 
-Packages displayed at the end of each section
+---
 
-Projects
+## 📂 Project Structure
 
-Visual project cards
-
-Clean layout with large images
-
-Professional presentation of work
-
-About Us
-
-Business introduction
-
-Vision and values
-
-Trust-building content
-
-Contact
-
-Smart contact form
-
-Toggle between WhatsApp and Email
-
-Social media links
-
-🎨 Design & UI/UX
-
-Responsive design (mobile, tablet, desktop)
-
-Clean card-based layout
-
-Smooth hover and transition effects
-
-Clear typography and spacing
-
-Focus on readability and user flow
-
-🛠️ Technologies Used
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Tailwind CSS / Bootstrap (depending on version)
-
-Responsive layout principles
-
-Clean and organized file structure
-
-📂 Project Structure
+```plaintext
 /
 ├── index.html
 ├── services.html
@@ -103,17 +85,3 @@ Clean and organized file structure
 ├── js/
 │   └── main.js
 └── README.md
-
-⚙️ Features
-
-Fully responsive layout
-
-Reusable package cards
-
-Modern UI animations
-
-SEO-friendly structure
-
-Easy to customize and extend
-
-Ready for deployment
